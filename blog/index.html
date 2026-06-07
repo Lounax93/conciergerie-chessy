@@ -87,6 +87,28 @@
     .blog-section { padding:80px 24px 96px; }
     .container { max-width:960px; margin:0 auto; }
 
+    /* ── ARTICLES GRID ── */
+    .articles-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+    .article-card {
+      background: var(--stone-light);
+      border: 1px solid var(--beige);
+      border-radius: 2px;
+      display:flex; flex-direction:column; overflow:hidden;
+      transition:box-shadow .3s, transform .25s;
+    }
+    .article-card:hover { box-shadow:0 10px 32px rgba(0,0,0,.08); transform:translateY(-2px); }
+    .card-thumb { height:170px; display:flex; align-items:flex-end; padding:20px; }
+    .card-thumb-label { font-size:.65rem; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--champagne); background:rgba(15,30,46,.75); padding:5px 12px; border-radius:2px; }
+    .card-body { padding:24px; flex:1; display:flex; flex-direction:column; }
+    .card-meta { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+    .card-tag { font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--champagne); }
+    .card-date { font-size:.6rem; color:var(--text-light); }
+    .card-title { font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:500; color:var(--slate); line-height:1.25; margin-bottom:10px; }
+    .card-desc { font-size:.82rem; color:var(--text-light); line-height:1.7; font-weight:300; margin-bottom:20px; flex:1; }
+    .card-link { display:inline-flex; align-items:center; gap:8px; font-size:.72rem; font-weight:400; color:var(--champagne-dark); letter-spacing:.06em; transition:gap .2s; }
+    .card-link:hover { gap:14px; }
+    .card-link svg { width:13px; height:13px; }
+
     /* ── COMING SOON ── */
     .coming-soon-card {
       background: var(--stone-light);
@@ -204,12 +226,39 @@
 <section class="blog-section" style="background:var(--stone)">
   <div class="container">
 
-    <!-- Coming soon card -->
-    <div class="coming-soon-card reveal">
-      <span class="coming-soon-icon">✦</span>
-      <h2>Articles à venir</h2>
-      <p>Nos experts préparent des guides pratiques sur l'investissement Airbnb à Chessy. Laissez votre email pour être notifié à la publication.</p>
-      <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-champagne">Estimer mes revenus en attendant →</a>
+    <!-- Articles -->
+    <div class="articles-grid">
+
+      <a href="/blog/revenus-airbnb-chessy-disneyland" class="article-card reveal">
+        <div class="card-thumb" style="background:linear-gradient(135deg,#0F1E2E 0%,#1A2D3F 50%,#0F1E2E 100%);">
+          <span class="card-thumb-label">Revenus · Chessy</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-tag">Revenus · Chessy</span>
+            <span class="card-date">Juin 2026</span>
+          </div>
+          <div class="card-title">Combien rapporte un Airbnb à Chessy près de Disneyland en 2026 ?</div>
+          <p class="card-desc">Revenus réels par type de bien, taux d'occupation par saison, comparatif location classique. Tous les chiffres du marché Val d'Europe.</p>
+          <span class="card-link">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/blog/saisonnalite-airbnb-chessy-disneyland" class="article-card reveal reveal-delay-1">
+        <div class="card-thumb" style="background:linear-gradient(135deg,#0a1f12 0%,#1a3a22 50%,#0a1f12 100%);">
+          <span class="card-thumb-label">Saisonnalité · Disney</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-tag">Saisonnalité · Chessy</span>
+            <span class="card-date">Juin 2026</span>
+          </div>
+          <div class="card-title">Saisonnalité Airbnb à Chessy Disneyland : maximisez vos revenus en 2026</div>
+          <p class="card-desc">Noël, Halloween, vacances scolaires — comment ajuster vos tarifs aux pics de demande des 16M visiteurs annuels.</p>
+          <span class="card-link">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </a>
+
     </div>
 
     <!-- Upcoming topics preview -->

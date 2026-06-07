@@ -10,5 +10,9 @@
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
+  ],
+  "redirects": [
+    { "source": "/revenus-airbnb-chessy-disneyland", "destination": "/blog/revenus-airbnb-chessy-disneyland", "permanent": true },
+    { "source": "/saisonnalite-airbnb-chessy-disneyland", "destination": "/blog/saisonnalite-airbnb-chessy-disneyland", "permanent": true }
   ]
 }
