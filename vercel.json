@@ -15,6 +15,8 @@
     { "source": "/reglementation-location-courte-duree-chessy", "destination": "/blog/reglementation-location-courte-duree-chessy", "permanent": true },
     { "source": "/guide-decoration-equipement-airbnb-chessy-disneyland", "destination": "/blog/guide-decoration-equipement-airbnb-chessy-disneyland", "permanent": true },
     { "source": "/revenus-airbnb-chessy-disneyland", "destination": "/blog/revenus-airbnb-chessy-disneyland", "permanent": true },
-    { "source": "/saisonnalite-airbnb-chessy-disneyland", "destination": "/blog/saisonnalite-airbnb-chessy-disneyland", "permanent": true }
+    { "source": "/saisonnalite-airbnb-chessy-disneyland", "destination": "/blog/saisonnalite-airbnb-chessy-disneyland", "permanent": true },
+    { "source": "/prix-immobilier-chessy-investissement-airbnb-2026", "destination": "/blog/prix-immobilier-chessy-investissement-airbnb-2026", "permanent": true },
+    { "source": "/conciergerie-airbnb-chessy-tarifs-prestations-2026", "destination": "/blog/conciergerie-airbnb-chessy-tarifs-prestations-2026", "permanent": true }
   ]
 }
