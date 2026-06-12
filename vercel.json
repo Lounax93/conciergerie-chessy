@@ -20,6 +20,7 @@
     { "source": "/conciergerie-airbnb-chessy-tarifs-prestations-2026", "destination": "/blog/conciergerie-airbnb-chessy-tarifs-prestations-2026", "permanent": true },
     { "source": "/home-staging-airbnb-chessy-ete-2026", "destination": "/blog/home-staging-airbnb-chessy-ete-2026", "permanent": true },
     { "source": "/lmnp-fiscalite-airbnb-chessy-2026", "destination": "/blog/lmnp-fiscalite-airbnb-chessy-2026", "permanent": true },
-    { "source": "/photographie-professionnelle-airbnb-chessy", "destination": "/blog/photographie-professionnelle-airbnb-chessy", "permanent": true }
+    { "source": "/photographie-professionnelle-airbnb-chessy", "destination": "/blog/photographie-professionnelle-airbnb-chessy", "permanent": true },
+    { "source": "/check-in-autonome-serrure-connectee-airbnb-chessy", "destination": "/blog/check-in-autonome-serrure-connectee-airbnb-chessy", "permanent": true }
   ]
 }
