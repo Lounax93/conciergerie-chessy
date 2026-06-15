@@ -630,11 +630,87 @@
       color: rgba(255,255,255,0.22);
     }
 
+    /* ── HAMBURGER MENU ── */
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.6rem;
+      cursor: pointer;
+      padding: 4px 6px;
+      line-height: 1;
+      z-index: 110;
+      transition: color 0.2s;
+    }
+    .hamburger:hover { color: var(--champagne); }
+
+    /* ── MOBILE OVERLAY ── */
+    .mobile-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 200;
+      background: rgba(15,30,46,0.97);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.35s ease, visibility 0.35s ease;
+    }
+    .mobile-overlay.open {
+      opacity: 1;
+      visibility: visible;
+    }
+    .mobile-overlay-inner {
+      position: relative;
+      text-align: center;
+      padding: 40px 24px;
+    }
+    .mobile-close {
+      position: absolute;
+      top: -20px;
+      right: 0;
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.6);
+      font-size: 1.6rem;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .mobile-close:hover { color: #fff; }
+    .mobile-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    .mobile-links a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 1.15rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      transition: color 0.2s;
+    }
+    .mobile-links a:hover { color: var(--champagne); }
+    .mobile-cta {
+      display: inline-block;
+      background: var(--champagne);
+      color: #fff !important;
+      padding: 14px 36px;
+      border-radius: 2px;
+      font-weight: 400 !important;
+      margin-top: 8px;
+    }
+    .mobile-cta:hover { background: var(--champagne-dark) !important; }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       nav { padding: 18px 24px; }
       nav.scrolled { padding: 12px 24px; }
       .nav-links { display: none; }
+      .hamburger { display: block; }
       .benefits-grid,
       .testimonials-grid { grid-template-columns: 1fr; gap: 20px; }
       .zone-inner { grid-template-columns: 1fr; gap: 48px; }
@@ -654,7 +730,21 @@
     <li><a href="/blog">Blog</a></li>
     <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="nav-cta" target="_blank" rel="noopener">Prendre rendez-vous</a></li>
   </ul>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">☰</button>
 </nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div id="mobileMenu" class="mobile-overlay">
+  <div class="mobile-overlay-inner">
+    <button class="mobile-close" id="mobileCloseBtn" aria-label="Fermer le menu">✕</button>
+    <ul class="mobile-links">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/qui-sommes-nous">Qui sommes-nous</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="mobile-cta" target="_blank" rel="noopener">Prendre rendez-vous</a></li>
+    </ul>
+  </div>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -1061,6 +1151,35 @@
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 40);
   }, { passive: true });
+
+  // MOBILE MENU TOGGLE
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+
+  function openMobile() {
+    mobileMenu.classList.add('open');
+    hamburgerBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMobile() {
+    mobileMenu.classList.remove('open');
+    hamburgerBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  if (hamburgerBtn && mobileMenu) {
+    hamburgerBtn.addEventListener('click', openMobile);
+    mobileCloseBtn.addEventListener('click', closeMobile);
+    // Close on nav link click
+    mobileMenu.querySelectorAll('.mobile-links a').forEach(link => {
+      link.addEventListener('click', closeMobile);
+    });
+    // Close on overlay background click
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) closeMobile();
+    });
+  }
 
   // Scroll reveal
   const revealEls = document.querySelectorAll('.reveal');
