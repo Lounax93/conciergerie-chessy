@@ -25,6 +25,7 @@
     { "source": "/lancer-premier-airbnb-chessy-disneyland-2026", "destination": "/blog/lancer-premier-airbnb-chessy-disneyland-2026", "permanent": true },
     { "source": "/avis-clients-superhost-airbnb-chessy-2026", "destination": "/blog/avis-clients-superhost-airbnb-chessy-2026", "permanent": true },
     { "source": "/tarification-dynamique-airbnb-chessy-2026", "destination": "/blog/tarification-dynamique-airbnb-chessy-2026", "permanent": true },
-    { "source": "/assurance-location-courte-duree-chessy", "destination": "/blog/assurance-location-courte-duree-chessy", "permanent": true }
+    { "source": "/assurance-location-courte-duree-chessy", "destination": "/blog/assurance-location-courte-duree-chessy", "permanent": true },
+    { "source": "/preparer-airbnb-famille-enfants-chessy-disneyland", "destination": "/blog/preparer-airbnb-famille-enfants-chessy-disneyland", "permanent": true }
   ]
 }
