@@ -29,6 +29,7 @@
     { "source": "/preparer-airbnb-famille-enfants-chessy-disneyland", "destination": "/blog/preparer-airbnb-famille-enfants-chessy-disneyland", "permanent": true },
     { "source": "/menage-professionnel-blanchisserie-airbnb-chessy", "destination": "/blog/menage-professionnel-blanchisserie-airbnb-chessy", "permanent": true },
     { "source": "/transport-acces-disneyland-airbnb-chessy", "destination": "/blog/transport-acces-disneyland-airbnb-chessy", "permanent": true },
-    { "source": "/animaux-de-compagnie-airbnb-chessy-disneyland", "destination": "/blog/animaux-de-compagnie-airbnb-chessy-disneyland", "permanent": true }
+    { "source": "/animaux-de-compagnie-airbnb-chessy-disneyland", "destination": "/blog/animaux-de-compagnie-airbnb-chessy-disneyland", "permanent": true },
+    { "source": "/strategie-multi-plateformes-airbnb-chessy", "destination": "/blog/strategie-multi-plateformes-airbnb-chessy", "permanent": true }
   ]
 }
