@@ -12,6 +12,7 @@
     }
   ],
   "redirects": [
+    { "source": "/restaurants-commerces-chessy-val-deurope-voyageurs-airbnb", "destination": "/blog/restaurants-commerces-chessy-val-deurope-voyageurs-airbnb", "permanent": true },
     { "source": "/reglementation-location-courte-duree-chessy", "destination": "/blog/reglementation-location-courte-duree-chessy", "permanent": true },
     { "source": "/guide-decoration-equipement-airbnb-chessy-disneyland", "destination": "/blog/guide-decoration-equipement-airbnb-chessy-disneyland", "permanent": true },
     { "source": "/revenus-airbnb-chessy-disneyland", "destination": "/blog/revenus-airbnb-chessy-disneyland", "permanent": true },
