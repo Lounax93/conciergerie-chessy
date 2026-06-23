@@ -34,6 +34,7 @@
     { "source": "/clientele-internationale-airbnb-chessy-disneyland", "destination": "/blog/clientele-internationale-airbnb-chessy-disneyland", "permanent": true },
     { "source": "/strategie-multi-plateformes-airbnb-chessy", "destination": "/blog/strategie-multi-plateformes-airbnb-chessy", "permanent": true },
     { "source": "/services-additionnels-revenus-supplementaires-airbnb-chessy", "destination": "/blog/services-additionnels-revenus-supplementaires-airbnb-chessy", "permanent": true },
-    { "source": "/guide-bienvenue-livret-accueil-airbnb-chessy-disneyland", "destination": "/blog/guide-bienvenue-livret-accueil-airbnb-chessy-disneyland", "permanent": true }
+    { "source": "/guide-bienvenue-livret-accueil-airbnb-chessy-disneyland", "destination": "/blog/guide-bienvenue-livret-accueil-airbnb-chessy-disneyland", "permanent": true },
+    { "source": "/checklist-equipement-essentiel-airbnb-chessy-2026", "destination": "/blog/checklist-equipement-essentiel-airbnb-chessy-2026", "permanent": true }
   ]
 }

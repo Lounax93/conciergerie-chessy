@@ -188,7 +188,13 @@
   </url>
   <url>
     <loc>https://conciergeriechessy.fr/blog/checklist-accueil-airbnb-chessy-disneyland</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://conciergeriechessy.fr/blog/checklist-equipement-essentiel-airbnb-chessy-2026</loc>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
