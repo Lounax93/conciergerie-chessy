@@ -1,6 +1,9 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/:slug((?!blog|assets|styles|qui-sommes-nous|robots\\.txt|sitemap\\.xml|favicon\\.ico|vercel\\.json).*)", "destination": "/blog/:slug", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -10,31 +13,5 @@
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
-  ],
-  "redirects": [
-    { "source": "/restaurants-commerces-chessy-val-deurope-voyageurs-airbnb", "destination": "/blog/restaurants-commerces-chessy-val-deurope-voyageurs-airbnb", "permanent": true },
-    { "source": "/reglementation-location-courte-duree-chessy", "destination": "/blog/reglementation-location-courte-duree-chessy", "permanent": true },
-    { "source": "/guide-decoration-equipement-airbnb-chessy-disneyland", "destination": "/blog/guide-decoration-equipement-airbnb-chessy-disneyland", "permanent": true },
-    { "source": "/revenus-airbnb-chessy-disneyland", "destination": "/blog/revenus-airbnb-chessy-disneyland", "permanent": true },
-    { "source": "/saisonnalite-airbnb-chessy-disneyland", "destination": "/blog/saisonnalite-airbnb-chessy-disneyland", "permanent": true },
-    { "source": "/prix-immobilier-chessy-investissement-airbnb-2026", "destination": "/blog/prix-immobilier-chessy-investissement-airbnb-2026", "permanent": true },
-    { "source": "/conciergerie-airbnb-chessy-tarifs-prestations-2026", "destination": "/blog/conciergerie-airbnb-chessy-tarifs-prestations-2026", "permanent": true },
-    { "source": "/home-staging-airbnb-chessy-ete-2026", "destination": "/blog/home-staging-airbnb-chessy-ete-2026", "permanent": true },
-    { "source": "/lmnp-fiscalite-airbnb-chessy-2026", "destination": "/blog/lmnp-fiscalite-airbnb-chessy-2026", "permanent": true },
-    { "source": "/photographie-professionnelle-airbnb-chessy", "destination": "/blog/photographie-professionnelle-airbnb-chessy", "permanent": true },
-    { "source": "/check-in-autonome-serrure-connectee-airbnb-chessy", "destination": "/blog/check-in-autonome-serrure-connectee-airbnb-chessy", "permanent": true },
-    { "source": "/lancer-premier-airbnb-chessy-disneyland-2026", "destination": "/blog/lancer-premier-airbnb-chessy-disneyland-2026", "permanent": true },
-    { "source": "/avis-clients-superhost-airbnb-chessy-2026", "destination": "/blog/avis-clients-superhost-airbnb-chessy-2026", "permanent": true },
-    { "source": "/tarification-dynamique-airbnb-chessy-2026", "destination": "/blog/tarification-dynamique-airbnb-chessy-2026", "permanent": true },
-    { "source": "/assurance-location-courte-duree-chessy", "destination": "/blog/assurance-location-courte-duree-chessy", "permanent": true },
-    { "source": "/preparer-airbnb-famille-enfants-chessy-disneyland", "destination": "/blog/preparer-airbnb-famille-enfants-chessy-disneyland", "permanent": true },
-    { "source": "/menage-professionnel-blanchisserie-airbnb-chessy", "destination": "/blog/menage-professionnel-blanchisserie-airbnb-chessy", "permanent": true },
-    { "source": "/transport-acces-disneyland-airbnb-chessy", "destination": "/blog/transport-acces-disneyland-airbnb-chessy", "permanent": true },
-    { "source": "/animaux-de-compagnie-airbnb-chessy-disneyland", "destination": "/blog/animaux-de-compagnie-airbnb-chessy-disneyland", "permanent": true },
-    { "source": "/clientele-internationale-airbnb-chessy-disneyland", "destination": "/blog/clientele-internationale-airbnb-chessy-disneyland", "permanent": true },
-    { "source": "/strategie-multi-plateformes-airbnb-chessy", "destination": "/blog/strategie-multi-plateformes-airbnb-chessy", "permanent": true },
-    { "source": "/services-additionnels-revenus-supplementaires-airbnb-chessy", "destination": "/blog/services-additionnels-revenus-supplementaires-airbnb-chessy", "permanent": true },
-    { "source": "/guide-bienvenue-livret-accueil-airbnb-chessy-disneyland", "destination": "/blog/guide-bienvenue-livret-accueil-airbnb-chessy-disneyland", "permanent": true },
-    { "source": "/checklist-equipement-essentiel-airbnb-chessy-2026", "destination": "/blog/checklist-equipement-essentiel-airbnb-chessy-2026", "permanent": true }
   ]
 }
